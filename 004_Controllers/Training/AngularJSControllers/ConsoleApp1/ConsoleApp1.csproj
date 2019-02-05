@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E821811F-3F59-4809-A0CC-093E5AA688A6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Samples\01_Basic_Controller\001_BasicCtrl.html" />
+    <Content Include="Samples\01_Basic_Controller\002_BasicCtrl.html" />
+    <Content Include="Samples\01_Basic_Controller\003_BasicCtrl.html" />
+    <Content Include="Samples\01_Basic_Controller\004_ScopeLessCtrl.html" />
+    <Content Include="Samples\02_Inheritance\001_MonoliticCtrl.html" />
+    <Content Include="Samples\02_Inheritance\002_ReusingCtrl.html" />
+    <Content Include="Samples\02_Inheritance\003_Inheritance.html" />
+    <Content Include="Samples\02_Inheritance\004_Inheritance.html" />
+    <Content Include="Samples\03_Messaging\001_broadcast.html" />
+    <Content Include="Samples\03_Messaging\002_emit.html" />
+    <Content Include="Samples\04_Binding\001_%24watch.html" />
+    <Content Include="Samples\04_Binding\002_%24watchUpdate.html" />
+    <Content Include="Samples\04_Binding\003_%24digest.html" />
+    <Content Include="Samples\04_Binding\004_%24apply.html" />
+    <Content Include="Samples\05_ExplicitScopeUpdate\001_Sample.html" />
+    <Content Include="Samples\05_ExplicitScopeUpdate\002_ControllingState.html" />
+    <Content Include="Samples\05_ExplicitScopeUpdate\003_CountingClicks.html" />
+    <Content Include="Samples\Libraries\angular.js" />
+    <Content Include="Samples\Libraries\bootstrap-theme.css" />
+    <Content Include="Samples\Libraries\bootstrap.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
